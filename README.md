@@ -13,7 +13,7 @@
 [Contact](#contact-info)
 
 
-# Database Design
+## Database Design
 ### Node Types
 
 1. **User Node**
@@ -30,19 +30,15 @@
 
 ### Edge Types
 
-1. **Friendship Edge** (User to User)
-   - Properties: FriendshipSince, InteractionScore
+1. **Post Creation Edge** (User -> Post)
+   - Properties: PosteddAt, PostType (e.g., text, image, video)
 
-2. **Post Creation Edge** (User to Post)
-   - Properties: CreatedAt, PostType (e.g., text, image, video)
+2. **Comment Creation Edge** (User -> Comment)
+   - Properties: CommentedAt, CommentType (e.g., text, image, video)
 
-3. **Membership Edge** (User to Group)
+3. **Group Membership Edge** (User -> Group)
    - Properties: JoinedDate, Role (e.g., admin, member)
 
-4. **Attendance Edge** (User to Event)
-   - Properties: RSVPStatus (e.g., going, interested, not going), RSVPDate
-
-5. **Comment Edge** (User to Comment, and Comment to Post) (additional type for complexity)
-   - Properties: CommentedAt
+4. 
 
 These nodes and edges are designed to represent a typical social networking structure where users can connect with each other, create and interact with posts, join groups, participate in events, and comment on posts. The properties chosen for each node and edge are meant to reflect the most common and essential attributes needed to capture the essence of the interactions on such a platform.
