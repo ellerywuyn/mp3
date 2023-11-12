@@ -3,7 +3,7 @@
 
 ## Quick navigation
 
-[Database Design](#Database)\
+[Database Design](#Database-Design)\
 [Data](#data)\
 [Models](#models)\
 [Timeline](#timeline)\
@@ -13,7 +13,7 @@
 [Contact](#contact-info)
 
 
-
+# Database Design
 ### Node Types
 
 1. **User Node**
