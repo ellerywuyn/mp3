@@ -40,7 +40,7 @@ Author: Yuning Wu
    - Properties: None
    - Rationale: Links comments directly to the posts they are related to, establishing a clear thread of conversation.
 
-5. **Community Membership Edge** (User -> Group)
+4. **Community Membership Edge** (User -> Group)
    - Properties: JoinedDate, Role (e.g., admin, member)
    - Rationale: Indicates which users are part of which groups and their roles within these groups, which is essential for managing access and interactions within groups.
 
