@@ -29,7 +29,8 @@ Author: Yuning Wu
 ### Edge Types
 
 1. **Connection Edge** (User -> User)
-   - Properties: ConnectedSince, ConnectionType (e.g., friend, colleague, classmate, professional)
+   - Types: Friend, Colleague, Classmate, Professional
+   - Properties: ConnectedSince
    - Rationale: Connects users to users, indicating when the connect was made and the type of connection. 
 
 3. **Post Creation Edge** (User -> Post)
