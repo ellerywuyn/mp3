@@ -4,7 +4,7 @@
 ## Quick navigation
 
 [Database Design](#Database-Design)\
-[Benefits and Challenges](#Benefits-and-Challengesa)
+[Benefits and Challenges](#Benefits-and-Challenges)
 
 ## Database Design
 ### Node Types
