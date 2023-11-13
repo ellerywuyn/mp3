@@ -11,7 +11,7 @@ Author: Yuning Wu
 ### Node Types
 
 1. **User Node**
-   - Properties: StudentID, Name, Email, ProfilePicture, CurrentRole, Bio, EnrollmentYear, GraduationYear, EmployedOrNot, Company, Location, Job Position, Interests
+   - Properties: StudentID, VUNetID, Name, Email, ProfilePicture, CurrentRole, Bio, EnrollmentYear, GraduationYear, Employed, Company, Location, Job Position, Interests
    - Rationale: The foundation of any social network, representing all individuals on the platform. Properties like `StudentID`, `Name`, `Email`, `Bio` and `ProfilePicture` are standard across social networks. `CurrentRole`, `EnrollmentYear`, `GraduationYear`, `EmployedOrNot`, `Company`, `Location`, `Job Position`, and `Interests` are tailored to create networking opportunities and professional connections.
 
 2. **Post Node**
@@ -28,19 +28,23 @@ Author: Yuning Wu
 
 ### Edge Types
 
-1. **Post Creation Edge** (User -> Post)
+1. **Connection Edge** (User -> User)
+   - Properties: ConnectedSince, ConnectionType (e.g., friend, colleague, classmate, professional)
+   - Rationale: Connects users to users, indicating when the connect was made and the type of connection. 
+
+3. **Post Creation Edge** (User -> Post)
    - Properties: PostedAt, PostType (e.g., text, image, video)
    - Rationale: Connects users with their content, establishing ownership and context of posts.
 
-2. **Comment Creation Edge** (User -> Comment)
+4. **Comment Creation Edge** (User -> Comment)
    - Properties: CommentedAt, CommentType (e.g., text, image, video)
    - Rationale: Connects users to their comments, similar to post creation, indicating who commented and what type of comment was made.
 
-3. **Comment Post Relation Edge** (Comment -> Post)
+5. **Comment Post Relation Edge** (Comment -> Post)
    - Properties: None
    - Rationale: Links comments directly to the posts they are related to, establishing a clear thread of conversation.
 
-4. **Community Membership Edge** (User -> Group)
+6. **Community Membership Edge** (User -> Group)
    - Properties: JoinedDate, Role (e.g., admin, member)
    - Rationale: Indicates which users are part of which groups and their roles within these groups, which is essential for managing access and interactions within groups.
 
