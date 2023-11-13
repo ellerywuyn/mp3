@@ -12,7 +12,7 @@ Author: Yuning Wu
 
 1. **User Node**
    - Properties: StudentID, VUNetID, Name, Email, ProfilePicture, CurrentRole, Bio, EnrollmentYear, GraduationYear, Employed, Company, Location, Job Position, Interests
-   - Rationale: The foundation of any social network, representing all individuals on the platform. Properties like `StudentID`, `Name`, `Email`, `Bio` and `ProfilePicture` are standard across social networks. `CurrentRole`, `EnrollmentYear`, `GraduationYear`, `EmployedOrNot`, `Company`, `Location`, `Job Position`, and `Interests` are tailored to create networking opportunities and professional connections.
+   - Rationale: The foundation of any social network, representing all individuals on the platform. Properties like `StudentID`, `Name`, `Email`, `Bio` and `ProfilePicture` are standard across social networks. `CurrentRole`, `EnrollmentYear`, `GraduationYear`, `Employed`, `Company`, `Location`, `Job Position`, and `Interests` are tailored to create networking opportunities and professional connections.
 
 2. **Post Node**
    - Properties: PostID, Content, Timestamp, MediaURL, LikesCount, CommentsCount, RepostsCount, ViewsCount, BookmarksCount, SharesCount, Topic, Type
