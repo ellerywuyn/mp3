@@ -5,7 +5,8 @@ Author: Yuning Wu
 ## Quick navigation
 
 [Database Design](#Database-Design)\
-[Benefits and Challenges](#Benefits-and-Challenges)
+[Benefits and Challenges](#Benefits-and-Challenges)\
+[Data Insertion](#Data-Insertion)
 
 ## Database Design
 ### Node Types
@@ -31,7 +32,7 @@ Author: Yuning Wu
 1. **Connection Edge** (User -> User)
    - Types: Friend, Colleague, Classmate, Professional
    - Properties: ConnectedSince
-   - Rationale: Connects users to users, indicating when the connect was made and the type of connection. 
+   - Rationale: Connects users to users, indicating when the connection was made and the type of connection. 
 
 3. **Post Creation Edge** (User -> Post)
    - Properties: PostedAt, PostType (e.g., text, image, video)
@@ -70,4 +71,10 @@ Author: Yuning Wu
 - **Scalability:** As the platform grows, it will need to manage increasing data volumes and maintain performance.
 
 - **User Engagement:** With many potential actions (likes, comments, shares, etc.), it's a challenge to keep users engaged and not overwhelmed.
+
+
+## Data Insertion
+**I spent a lot of time making sure that all data inserted make sense. For example, as DSI director, Charlie Davis would post DSI-related announcements, not his first-year experience a DSI master's student, and as a second-year master's student, Alice Johnson would post such things, etc. Comments are related to posts and comments also fit their creators' roles.**
+
+This will ensure that my database is realistic.
 
