@@ -6,7 +6,8 @@ Author: Yuning Wu
 
 [Database Design](#Database-Design)\
 [Benefits and Challenges](#Benefits-and-Challenges)\
-[Data Insertion](#Data-Insertion)
+[Data Insertion](#Data-Insertion)\
+[Generative AI Usage](#Generative-AI-Usage)
 
 ## Database Design
 ### Node Types
@@ -78,3 +79,5 @@ Author: Yuning Wu
 
 This will ensure that my database is realistic.
 
+## Generative AI Usage
+Generative AI was used to create sample nodes. I modified the samples to make sure of realistic relationships as detailed in [Data Insertion](#Data-Insertion).
